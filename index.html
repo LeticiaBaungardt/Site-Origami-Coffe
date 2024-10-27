@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Origami Coffe</title> 
+</head>
+<body>
+    <header>
+        <nav class="container">
+           <div>
+                <img src="imagens/ORIGAMI LOGO BRANCO.png" alt="Logo branco Origami" class="logoPagina">
+                <div  class="logo-title">
+                    <p class="title">ORIGAMI</p>
+                    <p class="subtitle">COFFEE</p>
+                </div>
+            </div>
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars" onclick="menuShow()"></i>
+            </div>
+
+            <ul>
+                <li><a href="#carrosel" class="actived js-link active">INICIO</a></li>
+                <li><a href="#product" class="js-link">PRODUTOS</a></li>
+                <li><a href="#about" class="js-link">SOBRE</a></li>
+                <li><a href="#review" class="js-link">TESTEMUNHOS</a></li>
+                <li><a href="#contact" class="js-link">CONTATO</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <main>
+        <section class="carroselImagens section" id="carrosel">
+            <div class="swiper-container-1 swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="imagens carrosel/01.png" alt=""></div>
+                    <div class="swiper-slide"><img src="imagens carrosel/02.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="imagens carrosel/03.png" alt=""></div>
+                    <div class="swiper-slide"><img src="imagens carrosel/04.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="imagens carrosel/05.jpg" alt=""></div>
+                    ...
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="section-products section" id="product">
+            <div class="section-products-title">
+              <h2>Bebidas</h2>
+              <p>Bebidas quentes, geladas e frappês.</p>  
+            </div>
+            
+
+            <div class="all-products">
+                <div class="product">
+                    <img src="produtos/espresso.jpg" alt="">
+                    <div class="product-info">
+                        <h4 class="product-title">Espresso</h4>
+                        <p class="product-description">Preparado c/ nossos grãos especiaisde origem 100% arábica.</p>
+                        <p class="product-price">R$ 6,00</p>
+                        <a class="product-btn" href="">Adicionar</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="produtos/capuccino.jpg" alt="">
+                    <div class="product-info">
+                        <h4 class="product-title">Capuccino</h4>
+                        <p class="product-description">O clássico café espresso, leite vaporizadoc/ um toque de cacau e canela.</p>
+                        <p class="product-price">R$ 12,00</p>
+                        <a class="product-btn" href="">Adicionar</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="produtos/Mocha Latte.jpg" alt="">
+                    <div class="product-info">
+                        <h4 class="product-title">Mocha</h4>
+                        <p class="product-description">O clássico chocolate quente, ao leite ou branco,leite vaporizado, espresso, finalizado c/ raspasde chocolate.</p>
+                        <p class="product-price">R$ 12,00</p>
+                        <a class="product-btn" href="" >Adicionar</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="produtos/macchiato.jpg" alt="">
+                    <div class="product-info">
+                        <h4 class="product-title">Macchiato</h4>
+                        <p class="product-description">Espresso intenso c/ espuma de leite vaporizado.</p>
+                        <p class="product-price">R$ 9,90</p>
+                        <a class="product-btn" href="">Adicionar</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="produtos/Iced Caramel Macchiato.jpg" alt="">
+                    <div class="product-info">
+                        <h4 class="product-title">Caramelo Macchiato Gelado </h4>
+                        <p class="product-description">Café espresso intenso, leite, cubos de gelo e caramelo.</p>
+                        <p class="product-price">R$ 16,00</p>
+                        <a class="product-btn" href="">Adicionar</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="produtos/Iced Vanilla Almond Milk Latte.jpg" alt="">
+                    <div class="product-info">
+                        <h4 class="product-title">Espresso Baunilha Gelado</h4>
+                        <p class="product-description">Café espresso, leite, cubos de gelo e essência de baunilha.</p>
+                        <p class="product-price">R$ 16,00</p>
+                        <a class="product-btn" href="">Adicionar</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="produtos/Frappuccino au Caramel.jpg" alt="">
+                    <div class="product-info">
+                        <h4 class="product-title">Frappê de Caramelo</h4>
+                        <p class="product-description">Base de creme, café, cubos de gelo, doce de leite,finalizado c/ chantilly e calda de caramelo.</p>
+                        <p class="product-price">R$ 19,90</p>
+                        <a class="product-btn" href="">Adicionar</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="produtos/Mocha Cookie Crumble Frappuccino.jpg" alt="">
+                    <div class="product-info">
+                        <h4 class="product-title">Frappê Avelã e Óreo</h4>
+                        <p class="product-description">Base de creme, café, essência de avelã, cubos de gelo, bordade avelã, finalizado c/ chantilly e óreo.</p>
+                        <p class="product-price">R$ 19,90</p>
+                        <a class="product-btn" href="">Adicionar</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-about section" id="about">
+            <img src="imagens/SOBRE NOS.jpg" alt="">
+
+            <div class="about-text">
+                <h3 class="about-title">Sobre nós!</h3>
+                <p class="about-description">A Origami Coffee é muito mais do que uma simples cafeteria. Fundada com a paixão por criar experiências únicas, buscamos harmonizar a arte do café com um ambiente acolhedor e inspirador. Nosso nome, inspirado na delicadeza e precisão da arte japonesa de dobrar papel, reflete nosso compromisso em cuidar de cada detalhe, desde a escolha dos grãos até a apresentação final de cada bebida.</p>
+            </div>
+
+        </section>
+
+        <section class="section-review section" id="review">
+            <div class="review-header">
+                <h1>Avaliações</h1>
+                <h2>Veja o que nossos clientes têm a dizer!</h2>
+                <p>Suas avaliações e sugestões são fundamentais para continuarmos aperfeiçoando nossas experiências e oferecendo sempre o melhor. Se você já esteve conosco, compartilhe seu feedback – queremos saber como podemos tornar sua próxima visita ainda mais especial.</p>
+            </div>
+            <div class="swiper-container-2 swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="review-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <blockquote class="review-quote">
+                        "Ambiente incrível e café impecável! A decoração é linda, e os baristas são super atenciosos. Voltarei sempre que puder."
+                    </blockquote>
+
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <img src="avatares/01.jpg" alt="Imagem autor 01">
+                        </div>
+
+                        <div class="author-info">
+                            <h3>Ana Souza</h3>
+                            <p>Cliente desde 2018</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="review-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <blockquote class="review-quote">
+                        "Melhor café da cidade! O cappuccino é maravilhoso, e os doces são irresistíveis. Recomendo a todos que buscam um lugar aconchegante para relaxar."
+                    </blockquote>
+
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <img src="avatares/02" alt="Imagem autor 02">
+                        </div>
+
+                        <div class="author-info">
+                            <h3>Lucas Martins</h3>
+                            <p>Cliente desde 2016</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="review-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <blockquote class="review-quote">
+                        "Adorei a vibe da cafeteria! O atendimento foi excelente, e o espresso que tomei estava perfeito. O lugar ideal para uma pausa no meio do dia."
+                    </blockquote>
+
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <img src="avatares/03.jpg" alt="Imagem autor 03">
+                        </div>
+
+                        <div class="author-info">
+                            <h3>Mariana Ferreira</h3>
+                            <p>Cliente desde 2021</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="review-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <blockquote class="review-quote">
+                        "Espaço agradável e ótimo para trabalhar ou estudar. O Wi-Fi é rápido, e o café, delicioso! Não é fácil encontrar um lugar assim."
+                    </blockquote>
+
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <img src="avatares/04.jpg" alt="Imagem autor 04">
+                        </div>
+
+                        <div class="author-info">
+                            <h3>Rafael Lima</h3>
+                            <p>Cliente desde 2022</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="review-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <blockquote class="review-quote">
+                        "A Origami Coffee tem um clima único, perfeito para quem ama cafés especiais. O flat white que pedi estava divino! Super recomendo."
+                    </blockquote>
+
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <img src="avatares/05.jpg" alt="Imagem autor 05">
+                        </div>
+
+                        <div class="author-info">
+                            <h3>Beatriz Oliveira</h3>
+                            <p>Cliente desde 2019</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </section>
+
+        <section class="section-contact section" id="contact">
+            <div class="contact-form">
+                <h2 class="contact-title">Entrar em contato</h2>
+                <form action="https://formsubmit.co/leticiabaungardt@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/module03/0-Atividades/Atividade-4/enviado.html">
+                    <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obrigado pelo contato e em breve retornaremos!">
+
+                    <input type="text" name="name" class="form-control" placeholder="Digite seu nome" required>
+                    <input type="email" name="email" class="form-control" placeholder="Digite seu email" required>
+                    <textarea name="message" rows="10" class="form-control" placeholder="Digite sua mensagem"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>  
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="section-footer">
+            <div class="footer-contacts">
+                <img src="imagens/ORIGAMI LOGO BRANCO.png" alt="Logo Rodapé">
+                <p class="footer-logo-title">ORIGAMI</p>
+                <p class="footer-logo-subtitle">COFFEE</p>
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>Site</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Início</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Produtos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Sobre</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Suporte</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Contato</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">SAC</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Telefones</a>
+                </li>
+            </ul>
+
+            <div class="footer-social-media">
+                <a href="#" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            ORIGAMI COFFEE
+            &#169
+            2024 all rights reserved
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
